@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app-landing-page</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="assests/images/logo/favicon.png">
+
+    <!-- Thamify icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- all css files -->
+    <link rel="stylesheet" href="assests/css/swiper.min.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assests/css/style.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assests/css/responsive.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-traget="#navbarText" data-bs-offset="0" class="navbar-nav" tabindex="0">
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-sticky">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assests/images/logo/oneshot-white.png" class="img-fluid navbar-brand-regular">
+                    <img src="./assests/images/logo/oneshot-pink.png" class="img-fluid navbar-brand-sticky">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="ti-align-justify navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link scroll active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#Features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#app-Screenshots">Screenshots</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#Pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- home section -->
+
+    <section id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="home_text">
+                        <h2>Present your app with <span class="text-uppercase">oneshot</span></h2>
+                        <p>OneShot is your ultimate app companion, designed to enhance your productivity and streamline
+                            your tasks. With its intuitive interface and powerful features, OneShot helps you stay
+                            organized and accomplish more in less time. Discover the convenience of seamless
+                            integration, customizable options, and real-time updates with OneShot.</p>
+                        <div class="home-download-btn">
+                            <a href="#" class="btn btn-bordered mt-4"><span class="fas fa-play"></span>Play
+                                store</a>
+                            <a href="#" class="btn btn-bordered mt-4"><span class="fab fa-apple"></span>App store</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="home-image">
+                        <img src="assests/images/m.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- counter section -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5 single_counter">
+                    <h2>
+                        <span id="count1"></span>M
+                    </h2>
+                    <h5>USERS</h5>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5 single_counter">
+                    <h2>
+                        <span id="count2"></span>K
+                    </h2>
+                    <h5>DOWNLOAD</h5>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5 single_counter">
+                    <h2>
+                        <span id="count3"></span>M
+                    </h2>
+                    <h5>CUSTOMER</h5>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                    <h2>
+                        <span id="count4"></span>K
+                    </h2>
+                    <h5>DEVELOPER</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- promo section -->
+    <section class="promo_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-12">
+
+                    <!-- section heading -->
+                    <div class="section_heading text-center">
+                        <h2>Why do every people<br><span>love App-mobile?</span></h2>
+                        <p>App-mobile revolutionizes the way you interact<br> with technology, offering seamless
+                            integration, </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mobile_px_20">
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_promo_hover single_promo_1 text-center">
+                        <div class="circle-icon">
+                            <span class="fas fa-heart-broken text-white"></span>
+
+                        </div>
+                        <h5>Clean Design</h5>
+                        <p>App-mobile revolutionizes the way you interact<br> with technology, offering seamless
+                            integration, </p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_promo_hover single_promo_1 text-center ">
+                        <div class="circle-icon">
+                            <span class="fas fa-unlock text-white"></span>
+
+                        </div>
+                        <h5>Clean Design</h5>
+                        <p>App-mobile revolutionizes the way you interact<br> with technology, offering seamless
+                            integration, </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_promo_hover single_promo_1 text-center ">
+                        <div class="circle-icon">
+                            <span class="fas fa-tachometer-alt text-white"></span>
+
+                        </div>
+                        <h5>Clean Design</h5>
+                        <p>App-mobile revolutionizes the way you interact<br> with technology, offering seamless
+                            integration, </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- feature section -->
+    <section id="Features">
+        <div class="title">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5 offset-md-1">
+                        <!-- feature middle -->
+                        <div class="features-middle">
+                            <h2>Our special features</h2>
+                            <!-- sub-title -->
+                            <p>Discover the unique advantages of our app, designed to cater to your needs with
+                                exceptional features. From seamless user experience to cutting-edge functionality, our
+                                app provides everything you need to stay ahead.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="features-img">
+                            <img src="assests/images/service-1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid margin_top_up ipad_px_30">
+            <div class="row">
+
+                <div class="col-sm-12 col-lg-10 offset-lg-1">
+                    <div class="row">
+                        <!-- single feature -->
+                        <div class="col-sm-5 col-lg-3">
+                            <div class="single_feature">
+                                <h4>Beautiful Design</h4>
+                                <p>Discover the unique advantages of our app, designed to cater to your needs with
+                                    exceptional features. From seamless user experience to cutting-edge functionality,
+                                </p>
+                                <span class="feature_icons"><i class="fa-solid fa-house"></i></span>
+                            </div>
+                        </div>
+                        <!-- single feature -->
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="single_feature">
+                                <h4>Beautiful Design</h4>
+                                <p>Discover the unique advantages of our app, designed to cater to your needs with
+                                    exceptional features. From seamless user experience to cutting-edge functionality,
+                                </p>
+                                <span class="feature_icons"><i class="fa fa-anchor"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- single feature -->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="single_feature">
+                                <h4>Beautiful Design</h4>
+                                <p>Discover the unique advantages of our app, designed to cater to your needs with
+                                    exceptional features. From seamless user experience to cutting-edge functionality,
+                                    our app provides everything you need to stay ahead. Explore the innovative tools and
+                                    services that set us apart and elevate your digital experience.</p>
+                                <span class="feature_icons"><i class="fa-brands fa-react"></i></span>
+                            </div>
+                        </div>
+                        <!-- single feature -->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="single_feature">
+                                <h4>Beautiful Design</h4>
+                                <p>Discover the unique advantages of our app, designed to cater to your needs with
+                                    exceptional features. From seamless user experience to cutting-edge functionality,
+                                    our app provides everything you need to stay ahead. Explore the innovative tools and
+                                    services that set us apart and elevate your digital experience.</p>
+                                <span class="feature_icons"><i class="fa-solid fa-cloud-arrow-down"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- single feature -->
+                        <div class="col-sm-6 col-lg-5">
+                            <div class="single_feature">
+                                <h4>Beautiful Design</h4>
+                                <p>Discover the unique advantages of our app, designed to cater to your needs with
+                                    exceptional features. From seamless user experience to cutting-edge functionality,
+                                    our app provides everything you need to stay ahead. Explore the innovative tools and
+                                    services that set us apart and elevate your digital experience.</p>
+                                <span class="feature_icons"><i class="fa-solid fa-bell-slash"></i></span>
+                            </div>
+                        </div>
+                        <!-- single feature -->
+                        <div class="col-sm-6 col-lg-5">
+                            <div class="single_feature">
+                                <h4>Beautiful Design</h4>
+                                <p>Discover the unique advantages of our app, designed to cater to your needs with
+                                    exceptional features. From seamless user experience to cutting-edge functionality,
+                                    our app provides everything you need to stay ahead. Explore the innovative tools and
+                                    services that set us apart and elevate your digital experience.</p>
+                                <span class="feature_icons"><i class="fa-solid fa-bell-slash"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- screenshot section  -->
+    <section id="app-Screenshots" class="ptb_100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <!-- screeeshot title -->
+                    <div class="section_heading text-center mb-5">
+                        <h2 class="section_title">App Screenshots</h2>
+                        <p class="section_sub_title">Take a closer look at our app's features and interface.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container app-screen">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                    <!-- single screenshot img -->
+                    <div class="slider-image">
+                        <img src="assests/images/screenshots/1.jpg" alt="slide 1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+
+                    <!-- single screenshot img -->
+                    <div class="slider-image">
+                        <img src="assests/images/screenshots/2.jpg" alt="slide 2">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+
+                    <!-- single screenshot img -->
+                    <div class="slider-image">
+                        <img src="assests/images/screenshots/3.jpg" alt="slide 3">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <!-- single screenshot img -->
+                    <div class="slider-image">
+                        <img src="assests/images/screenshots/4.jpg" alt="slide 4">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <!-- single screenshot img -->
+                    <div class="slider-image">
+                        <img src="assests/images/screenshots/5.jpg" alt="slide 4">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- pricing section -->
+    <section id="Pricing" class="ptb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <!-- title -->
+                    <div class="section_heading text-center">
+                        <h2>Approdable Packages</h2>
+                        <p>Explore our affordable packages designed to meet your needs and budget. Whether you're
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mobile_px_20">
+                <!-- single price -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_price">
+                        <!-- month -->
+                        <div class="month">
+                            month
+                        </div>
+                        <h5>premium</h5>
+                        <div class="icon_pad">
+                            <!-- icon circle -->
+                            <div class="icon_circle">
+                                <span class="fas fa-medal"></span> Medal
+                            </div>
+                        </div>
+                        <!-- dolar -->
+                        <div class="doler">
+                            <h2><span class="doler-sine">$</span>35</h2>
+                        </div>
+                        <!-- feature list -->
+                        <ul><br>
+                            <li>5GB Linux Space</li>
+                            <li>s MySQL Databases</li>
+                            <li>24/7 Tech Support</li>
+                            <li>Daily Backups</li>
+                            <!-- btn -->
+                            <a href="#" class="btn btn-bordered mt-4">learn more</a>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_price">
+                        <!-- month -->
+                        <div class="month">
+                            month
+                        </div>
+                        <h5>Basic</h5>
+                        <div class="icon_pad">
+                            <!-- icon circle -->
+                            <div class="icon_circle">
+                                <span class="fas fa-clipboard"></span>
+
+                            </div>
+                        </div>
+                        <!-- dolar -->
+                        <div class="doler">
+                            <h2><span class="doler-sine">$</span>55</h2>
+                        </div>
+                        <!-- feature list -->
+                        <ul><br>
+                            <li>5GB Linux Space</li>
+                            <li>s MySQL Databases</li>
+                            <li>24/7 Tech Support</li>
+                            <li>Daily Backups</li>
+                            <!-- btn -->
+                            <a href="#" class="btn btn-bordered mt-4">learn more</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_price active_price">
+                        <!-- month -->
+                        <div class="month">
+                            month
+                        </div>
+                        <h5>premium</h5>
+                        <div class="icon_pad">
+                            <!-- icon circle -->
+                            <div class="icon_circle">
+                                <span class="fas fa-crown"></span>
+                            </div>
+                        </div>
+                        <!-- dolar -->
+                        <div class="doler">
+                            <h2><span class="doler-sine">$</span>75</h2>
+                        </div>
+                        <!-- feature list -->
+                        <ul><br>
+                            <li>5GB Linux Space</li>
+                            <li>s MySQL Databases</li>
+                            <li>24/7 Tech Support</li>
+                            <li>Daily Backups</li>
+                            <!-- btn -->
+                            <a href="#" class="btn btn-bordered mt-4">learn more</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single_price">
+                        <!-- month -->
+                        <div class="month">
+                            month
+                        </div>
+                        <h5>Business</h5>
+                        <div class="icon_pad">
+                            <!-- icon circle -->
+                            <div class="icon_circle">
+                                <span class="fas fa-gift"></span>
+                            </div>
+                        </div>
+                        <!-- dolar -->
+                        <div class="doler">
+                            <h2><span class="doler-sine">$</span>35</h2>
+                        </div>
+                        <!-- feature list -->
+                        <ul><br>
+                            <li>5GB Linux Space</li>
+                            <li>s MySQL Databases</li>
+                            <li>24/7 Tech Support</li>
+                            <li>Daily Backups</li>
+                            <!-- btn -->
+                            <a href="#" class="btn btn-bordered mt-4">learn more</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contant section -->
+    <section id="contact">
+        <div class="contact ptb_100">
+            <div class="container">
+                <div class="mb-5 text-center">
+                    <h5>Let's Start a Conversation!</h5>
+                    <h2 class="fw-bold">Contact Us</h2>
+                </div>
+            </div>
+            <div class="mobile_px_20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            <h4 class="fw-bold">Contact info</h4>
+                            <ul class="info list-unstyled">
+                                <li class="d-flex align-items-center">
+                                    <span class="pe-3 fas fa-map-marker-alt fs-5"></span>
+                                    <p><a href="">Lorem ipsum dolor sit amet, consectetur.</a></p>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span class="pe-3 fas fa-mobile-alt fs-5"></span>
+                                    <p><a href="">+91 999-999-9999</a></p>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span class="pe-3 fas fa-envelope fs-5"></span>
+                                    <p><a href="">info@oneshot.in</a></p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="your name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group">
+                                            <input type="Email" class="form-control" placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="textarea" cols="30" rows="4"
+                                                placeholder="Enter your message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <button class="btn"><span class="fas fa-rocket pe-2 fs-5"></span>send
+                                            message</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="p-3 copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 p-3 text-center text-lg-start mob-pb-0">
+                        <p class="my-0">copyright © 2025
+                            <a href="#">ONESHOT</a>All Right Reserved
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center rext-lg-end nob-pt-0">
+                        <p>Designed by <a href="#" target="_blank">AYESHA EMAN</a>-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scrool top icon -->
+    <div id="scroolUp" title="scroll To Top">
+        <a href="#home"><span class="fas fa-arrow-up text-white"></span>
+        </a>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="assests/js/bootstrap.min.js"></script>
+
+    <!-- swiper.js -->
+    <script src="assests/js/swiper.min.js"></script>
+
+    <!-- main .js -->
+    <script src="assests/js/main.js"></script>
+</body>
+
+</html>
