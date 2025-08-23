@@ -1,231 +1,201 @@
+/* ===== Weather App - Compact Responsive CSS ===== */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
 }
 
+/* Mobile-first (compact by default) */
 body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    overflow-x: hidden; /* horizontal scroll remove */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* content upar se start ho */
+  background: black;
+  overflow-x: hidden;       /* horizontal scroll hataye */
+  padding: 10px;
 }
 
 .container {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    background-color: rgb(247, 248, 249);
-    border-radius: 12px;
-    padding: 20px;
+  width: 100%;
+  max-width: 280px;         /* chhota default */
+  background: #f7f8f9;
+  border-radius: 10px;
+  padding: 12px;
 }
 
+/* Search */
 .search-box {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 
 .search-box input {
-    flex: 1;
-    font-size: 18px;
-    text-transform: capitalize;
-    color: black;
-    background-color: skyblue;
-    padding: 10px 14px;
-    border-radius: 12px;
+  flex: 1;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: black;
+  background: skyblue;
+  padding: 6px 8px;
+  border-radius: 8px;
 }
 
 .search-box input::placeholder {
-    color: black;
+  color: black;
 }
 
 .search-box button {
-    width: 44px;
-    height: 44px;
-    background-color: skyblue;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 18px;
+  width: 30px;
+  height: 30px;
+  background: skyblue;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
 }
 
 .search-box button:hover {
-    color: #fff;
-    background-color: rgb(158, 157, 157);
+  color: #fff;
+  background: rgb(158, 157, 157);
 }
 
+/* Weather body (hidden by default; show via JS) */
 .weather-body {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-block: 15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 10px;
 }
 
 .weather-body img {
-    width: 60%;
-    max-width: 200px;
+  width: 90px;              /* chhota icon */
+  max-width: 100%;
 }
 
+/* Weather box */
 .weather-box {
-    margin-block: 15px;
-    text-align: center;
+  margin-block: 8px;
+  text-align: center;
 }
 
 .weather-box .temperature {
-    font-size: 36px;
-    font-weight: 800;
-    position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
 }
 
 .weather-box .temperature sup {
-    font-size: 18px;
-    position: absolute;
-    font-weight: 600;
+  font-size: 11px;
+  position: absolute;
+  font-weight: 600;
 }
 
 .weather-box .description {
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: capitalize;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: capitalize;
 }
 
+/* Details */
 .weather-details {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  gap: 6px;
+  flex-wrap: wrap;          /* tight spaces pe wrap ho jaye */
 }
 
 .humidity,
 .wind {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .weather-details span {
-    font-size: 28px;
-    color: black;
+  font-size: 14px;
+  color: black;
 }
 
 .weather-details .text {
-    margin-left: 8px;
-    font-size: 14px;
+  margin-left: 6px;
+  font-size: 11px;
 }
 
 .text span {
-    font-size: 16px;
-    font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
 }
 
+/* Error state */
 .location-not-found {
-    margin-top: 15px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  margin-top: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .location-not-found h1 {
-    font-size: 18px;
-    color: grey;
-    margin-bottom: 10px;
+  font-size: 13px;
+  color: grey;
+  margin-bottom: 8px;
 }
 
 .location-not-found img {
-    width: 70%;
-    max-width: 200px;
+  width: 110px;
 }
 
-/* =========================
-   Responsive Design 
-========================= */
+/* ====== Breakpoints (progressively scale up) ====== */
 
-/* For tablets and small desktops */
-@media (max-width: 1024px) {
-    .container {
-        width: 90%;
-        max-width: 500px;
-        padding: 18px;
-    }
-    .search-box input {
-        font-size: 16px;
-    }
-    .weather-box .temperature {
-        font-size: 30px;
-    }
-    .weather-details span {
-        font-size: 24px;
-    }
+/* Small phones to big phones */
+@media (min-width: 360px) {
+  .container { max-width: 300px; }
+  .weather-body img { width: 100px; }
 }
 
-/* For mobile screens */
-@media (max-width: 768px) {
-    body {
-        align-items: flex-start;
-        padding: 10px;
-    }
-    .container {
-        width: 100%;
-        padding: 15px;
-    }
-    .search-box {
-        flex-direction: column;
-    }
-    .search-box input {
-        width: 100%;
-        font-size: 16px;
-    }
-    .search-box button {
-        width: 100%;
-        height: 40px;
-        font-size: 16px;
-        border-radius: 8px;
-    }
-    .weather-body img {
-        width: 80%;
-    }
-    .weather-details {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-    .weather-details span {
-        font-size: 20px;
-    }
-    .weather-details .text {
-        font-size: 12px;
-    }
-    .text span {
-        font-size: 14px;
-    }
+/* Tablets (portrait) and up */
+@media (min-width: 600px) {
+  body { align-items: center; }  /* center on larger screens */
+  .container {
+    max-width: 360px;
+    padding: 14px;
+    border-radius: 12px;
+  }
+  .search-box input {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .search-box button {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+  .weather-box .temperature { font-size: 22px; }
+  .weather-box .temperature sup { font-size: 12px; }
+  .weather-box .description { font-size: 14px; }
+  .weather-details span { font-size: 16px; }
 }
 
-/* Very small devices (less than 480px) */
-@media (max-width: 480px) {
-    .container {
-        padding: 12px;
-    }
-    .search-box input {
-        font-size: 14px;
-        padding: 8px;
-    }
-    .search-box button {
-        font-size: 14px;
-        height: 36px;
-    }
-    .weather-box .temperature {
-        font-size: 24px;
-    }
-    .weather-details span {
-        font-size: 18px;
-    }
+/* Tablets (landscape) and small desktops */
+@media (min-width: 900px) {
+  .container { max-width: 400px; padding: 16px; }
+  .search-box input { font-size: 15px; }
+  .search-box button { width: 36px; height: 36px; font-size: 14px; }
+  .weather-body img { width: 120px; }
+  .weather-box .temperature { font-size: 26px; }
+  .weather-details span { font-size: 18px; }
+  .weather-details .text { font-size: 12px; }
 }
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  .container { max-width: 440px; }
+}
+
