@@ -152,3 +152,110 @@ body {
 .location-not-found img {
     width: 80%;
 }
+/* =========================
+   Responsive Design 
+========================= */
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+        max-width: 500px;
+        padding: 20px;
+    }
+
+    .search-box input {
+        font-size: 18px;
+    }
+
+    .weather-box .temperature {
+        font-size: 32px;
+    }
+
+    .weather-details span {
+        font-size: 28px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box input {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .search-box button {
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    .weather-body img {
+        width: 80%;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .humidity, .wind {
+        margin: 0;
+    }
+
+    .weather-details span {
+        font-size: 24px;
+    }
+
+    .weather-details .text {
+        font-size: 14px;
+    }
+
+    .text span {
+        font-size: 16px;
+    }
+}
+
+/* Very small devices (less than 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .search-box input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .search-box button {
+        font-size: 16px;
+        height: 36px;
+    }
+
+    .weather-box .temperature {
+        font-size: 26px;
+    }
+
+    .weather-details span {
+        font-size: 20px;
+    }
+}
